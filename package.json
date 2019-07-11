@@ -1,6 +1,6 @@
 {
   "name": "prism-color",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "prism-color React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -19,14 +19,13 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "16.x"
+  "dependencies": {
+    "css-vars-ponyfill": "^2.0.2",
+    "d3-color": "^1.2.8"
   },
+  "peerDependencies": {},
   "devDependencies": {
-    "nwb": "0.23.x",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "nwb": "0.23.x"
   },
   "author": "",
   "homepage": "",

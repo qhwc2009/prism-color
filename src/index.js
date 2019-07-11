@@ -1,9 +1,15 @@
-import React, {Component} from 'react'
+import cssVars from 'css-vars-ponyfill';
+import LIGHT from './light';
+import DARK from './dark';
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
+const setTheme = (set = DARK) => {
+  cssVars({
+    variables: set,
+  });
 }
+
+export {
+  LIGHT,
+  DARK,
+  setTheme,
+};
